@@ -15,4 +15,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::resource('students', StudentsController::class);
+// Route::resource('students', StudentsController::class);
+
+Route::get('students', [StudentsController::class, 'index']);
