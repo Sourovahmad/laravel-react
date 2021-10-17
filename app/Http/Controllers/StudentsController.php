@@ -8,13 +8,13 @@ use Illuminate\Http\Request;
 class StudentsController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display a listing of the resource.hfdf
      *
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        return students::all();
+        return response()->json(students::all());
     }
 
     /**
